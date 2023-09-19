@@ -57,6 +57,7 @@ function App() {
             audioRef.current.src = "./Stay X Pon Kasavu Mix.mp3"
             audioRef.current.alt = "Stay X Pon Kasavu Mix"
         }
+        audioRef.current.play()
     }
 
     const prevSong = () => {
@@ -69,6 +70,7 @@ function App() {
             audioRef.current.src = "./Stay X Pon Kasavu Mix.mp3"
             audioRef.current.alt = "Stay X Pon Kasavu Mix"
         }
+        audioRef.current.play()
     }
 
     return ( 
