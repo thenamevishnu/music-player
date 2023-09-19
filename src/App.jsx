@@ -71,9 +71,9 @@ function App() {
         }
     }
 
-    return (
-      <div className="w-screen h-screen flex justify-center items-center text-white text-center">
-          <div className="bg-[#1b1f24] sm:w-[400px] w-screen rounded-2xl p-10">
+    return ( 
+      <div className="w-screen sm:h-screen text-white flex justify-center sm:items-center h-auto sm:mt-0 mt-5 text-center">
+          <div className="bg-[#1b1f24] shadow-shadow-bold sm:w-[400px] w-11/12  rounded-2xl p-10">
               <audio src="./Stay X Pon Kasavu Mix.mp3" onTimeUpdate={updateTime} alt="Stay X Pon Kasavu Mix" ref={audioRef} />
               <div>
                     <img src="https://miro.medium.com/v2/resize:fit:1400/1*f7cZomxEUsR2AYQVlUXZog.gif" alt="music animation" className="rounded-xl"></img>

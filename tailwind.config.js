@@ -5,7 +5,11 @@ export default withMT({
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+        boxShadow:{
+          "shadow-bold":["inset 1px 1px 1px #777","inset -1px -1px 1px #777"]
+        }
+    },
   },
   plugins: [],
 })
