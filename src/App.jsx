@@ -5,7 +5,7 @@ function App() {
 
     const audioRef = useRef(null)
     const [percentage,setPercentage] = useState(0)
-    const [isPlay,setIsPlay] = useState(true)
+    const [isPlay,setIsPlay] = useState(false)
     const [dur, setDur] = useState(0)
 
     const onchange = (e) => { 
