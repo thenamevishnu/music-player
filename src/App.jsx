@@ -36,8 +36,11 @@ function App() {
         const percent = (e.currentTarget.currentTime/e.currentTarget.duration)*100
         const currentTime = audioRef.current.currentTime
         if(percent===100){
-          setIsPlay(false)
-          audioRef.current.pause()
+            setIsPlay(false)
+            audioRef.current.pause()
+            nextSong()
+            audioRef.current.play()
+            setIsPlay(true)
         }else{
           setDur(currentTime)
           setPercentage(percent)
