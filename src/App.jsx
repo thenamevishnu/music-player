@@ -71,7 +71,7 @@ function App() {
     return (
       <div className="w-screen h-screen flex justify-center items-center text-white text-center">
           <div className="bg-[#1b1f24] sm:w-[400px] w-screen rounded-2xl p-10">
-              <audio src="./Stay X Pon Kasavu Mix.mp3" onTimeUpdate={updateTime} alt="Stay X Pon Kasavu Mix" ref={audioRef} autoPlay></audio>
+              <audio src="./Stay X Pon Kasavu Mix.mp3" onTimeUpdate={updateTime} alt="Stay X Pon Kasavu Mix" ref={audioRef} />
               <div>
                     <img src="https://miro.medium.com/v2/resize:fit:1400/1*f7cZomxEUsR2AYQVlUXZog.gif" alt="music animation" className="rounded-xl"></img>
               </div>
