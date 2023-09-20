@@ -5,9 +5,9 @@ import {Songs} from '../../Services/Songs'
 function SongPlay({type}) {
         const audioRef = useRef("")
         const [percentage,setPercentage] = useState(0)
-        const [isPlay,setIsPlay] = useState(true)
+        const [isPlay,setIsPlay] = useState(false)
         const [dur, setDur] = useState(0)
-        const [playing,setPlaying] = useState(true)
+        const [playing,setPlaying] = useState(false)
 
         const onchange = (e) => { 
             const dur = audioRef.current.duration
@@ -88,7 +88,7 @@ function SongPlay({type}) {
         {type === "end" ? <div className="text-white text-center flex justify-center">
             <div className="bg-[#141414] shadow-bold sm:w-[400px] w-11/12  rounded-2xl p-10">
                 <div>
-                    <audio src={Songs[0].src} alt={Songs[0].title} onTimeUpdate={updateTime} ref={audioRef} autoPlay/>
+                    <audio src={Songs[0].src} alt={Songs[0].title} onTimeUpdate={updateTime} ref={audioRef}/>
                 </div>
                 <div>
                         <img src={playing ? "./playing.gif" : "./stop.jpg"} alt="music animation" className="rounded-xl"></img>
