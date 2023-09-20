@@ -5,11 +5,16 @@ export default withMT({
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {
-        boxShadow:{
-          "shadow-bold":["inset 1px 1px 1px #777","inset -1px -1px 1px #777"]
-        }
-    },
+      extend: {
+            boxShadow:{
+                "bold":["inset 2px 2px 2px #777","inset -2px -2px 2px #777"],
+                "head":"0px 2px 2px #000",
+                primary:["2px 2px 2px #000","-2px -2px 2px #000"]
+            },
+            fontFamily:{
+                head:['Hanalei Fill', "cursive"]
+            }
+      },
   },
   plugins: [],
 })
